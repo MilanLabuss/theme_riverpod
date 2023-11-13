@@ -4,10 +4,13 @@ import 'package:dark_light_theme/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+//author: Milan Labus
+//Explaing: So the changetheme_provider will hold the boolean state of which mode the user wants to use
+//then thememode_provider will consume that and set the ThemeMode accordingly
 void main() {
   // wrap the entire app with a ProviderScope so that widgets
   // will be able to read providers
-  runApp(ProviderScope(
+  runApp(const ProviderScope(
     child: MyApp(),
   ));
 }
